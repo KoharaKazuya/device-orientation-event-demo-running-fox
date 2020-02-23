@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>DeviceOrientation Event のデモ (走る狐)</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, YuGothic,
+          Arial, "メイリオ", Meiryo, sans-serif;
+      }
+      #description {
+        padding: 40px 20px;
+        font-size: 20px;
+        text-align: center;
+      }
+      #start {
+        display: block;
+        width: 200px;
+        padding: 20px;
+        text-align: center;
+        border: 0;
+        background: #009;
+        color: #fff;
+        font-size: 20px;
+        margin: auto;
+        border-radius: 4px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+      #start:disabled {
+        background: #999;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="description">
+      このページは DeviceOrientationEvent
+      が動作する様子を示すためのデモです。<br />
+      スマートフォンなどのデバイスの傾きを検知できる環境でのみ動作します。<br />
+      デバイスが縦になっている状態でのみ正常に表示できます。<br />
+      Start
+      ボタンを押したあと、デバイスを様々な方向に傾けて表示を確認してみましょう。
+    </p>
+    <button type="button" id="start" disabled>Start</button>
+    <noscript
+      ><p>
+        このページは JavaScript を使用しています。ご使用中のブラウザは
+        JavaScript が無効になっているか、JavaScript
+        に対応していません。JavaScript を有効にするか、JavaScript
+        が使用可能なブラウザでアクセスして下さい。
+      </p></noscript
+    >
+  <script type="text/javascript" src="main.js"></script></body>
+</html>
